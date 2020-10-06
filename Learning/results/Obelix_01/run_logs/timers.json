@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1601818027",
+        "python_version": "3.8.1 (tags/v3.8.1:1b293b6, Dec 18 2019, 23:11:46) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\David D'Haese\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\mlagents-learn --run-id Obelix_01",
+        "mlagents_version": "0.20.0",
+        "mlagents_envs_version": "0.20.0",
+        "communication_protocol_version": "1.1.0",
+        "tensorflow_version": "2.3.0",
+        "numpy_version": "1.18.1",
+        "end_time_seconds": "1601818045"
+    },
+    "total": 18.0398463,
+    "count": 1,
+    "self": 0.2959908999999996,
+    "children": {
+        "run_training.setup": {
+            "total": 0.010963399999999623,
+            "count": 1,
+            "self": 0.010963399999999623
+        },
+        "TrainerController.start_learning": {
+            "total": 17.732892,
+            "count": 1,
+            "self": 0.0007328000000015322,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 17.7314626,
+                    "count": 1,
+                    "self": 17.7314626
+                },
+                "trainer_threads": {
+                    "total": 6.999999975221272e-07,
+                    "count": 1,
+                    "self": 6.999999975221272e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 0.0006959000000001936,
+                    "count": 1,
+                    "self": 0.0006959000000001936
+                }
+            }
+        }
+    }
+}

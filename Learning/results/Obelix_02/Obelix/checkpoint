@@ -1,0 +1,2 @@
+model_checkpoint_path: "Obelix-57789.ckpt"
+all_model_checkpoint_paths: "Obelix-57789.ckpt"
