@@ -45,10 +45,10 @@ public class Environment : MonoBehaviour
             GameObject newDestination = Instantiate(destinationPrefab.gameObject);
 
             float angle = (float)i / (float)menhirCount * 2f * Mathf.PI;
-            float x = circleRadiusDestinations * Mathf.Cos(angle);
-            float z = circleRadiusDestinations * Mathf.Sin(angle);
+            float x = circleRadiusDestinations * Mathf.Cos(angle) + transform.position.x;
+            float z = circleRadiusDestinations * Mathf.Sin(angle) + transform.position.z;
 
-            newDestination.transform.localPosition = new Vector3(x, 2f, z);
+            newDestination.transform.localPosition = new Vector3(x, 1f + transform.position.y, z);
             newDestination.transform.localRotation = Quaternion.Euler(0f, angle, 0f);
 
             newDestination.transform.SetParent(destinations.transform);

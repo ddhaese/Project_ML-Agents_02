@@ -28,7 +28,7 @@ public class Menhir : MonoBehaviour
         {
             randomizedSpeed = speed * Random.Range(.5f, 1.5f);
             targetPosition = environment.randomPosition(1f);
-            transform.rotation = Quaternion.LookRotation(targetPosition - transform.position, Vector3.up);
+            transform.rotation = Quaternion.LookRotation(targetPosition - transform.localPosition, Vector3.up);
             float timeToGetThere = Vector3.Distance(transform.localPosition, targetPosition) / randomizedSpeed;
             nextActionTime = Time.fixedTime + timeToGetThere;
         }
