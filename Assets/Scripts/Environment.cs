@@ -11,7 +11,7 @@ public class Environment : MonoBehaviour
     public float circleRadiusDestinations = 9;
 
     private Obelix obelix;
-    private TextMeshPro cumulativeRewardText;
+    private TextMeshPro scoreBoard;
     private GameObject menhirs;
     private GameObject destinations;
 
@@ -19,15 +19,13 @@ public class Environment : MonoBehaviour
     {
         destinations = transform.Find("Destinations").gameObject;
         menhirs = transform.Find("Menhirs").gameObject;
-        cumulativeRewardText = transform.GetComponentInChildren<TextMeshPro>();
-        obelix = transform.GetComponentInChildren<Obelix>();
-
-        spawnStoneHenge();
+        scoreBoard = transform.GetComponentInChildren<TextMeshPro>();
+        obelix = transform.GetComponentInChildren<Obelix>();        
     }
 
     private void FixedUpdate()
     {
-        cumulativeRewardText.text = obelix.GetCumulativeReward().ToString("f2");
+        scoreBoard.text = obelix.GetCumulativeReward().ToString("f2");
     }
 
     public Vector3 randomPosition(float up)
@@ -36,6 +34,19 @@ public class Environment : MonoBehaviour
         float z = Random.Range(-9.75f, 9.75f);
 
         return new Vector3(x, up, z);
+    }
+
+    public void clearEnvironment()
+    {
+        foreach (Transform menhir in menhirs.transform)
+        {
+            GameObject.Destroy(menhir.gameObject);
+        }
+
+        foreach (Transform destination in destinations.transform)
+        {
+            GameObject.Destroy(destination.gameObject);
+        }
     }
 
     public void spawnStoneHenge()
@@ -49,21 +60,9 @@ public class Environment : MonoBehaviour
             float z = circleRadiusDestinations * Mathf.Sin(angle) + transform.position.z;
 
             newDestination.transform.localPosition = new Vector3(x, 1f + transform.position.y, z);
-            newDestination.transform.localRotation = Quaternion.Euler(0f, angle, 0f);
+            newDestination.transform.localRotation = Quaternion.Euler(0f, angle / Mathf.PI * 180, 0f);
 
             newDestination.transform.SetParent(destinations.transform);
-        }
-    }
-    public void clearEnvironment()
-    {
-        foreach (Transform menhir in menhirs.transform)
-        {
-            GameObject.Destroy(menhir.gameObject);
-        }
-
-        foreach (Transform menhir in destinations.transform)
-        {
-            GameObject.Destroy(menhir.gameObject);
         }
     }
 

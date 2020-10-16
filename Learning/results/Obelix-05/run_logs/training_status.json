@@ -1,0 +1,47 @@
+{
+    "Obelix": {
+        "checkpoints": [
+            {
+                "steps": 249999,
+                "file_path": "results\\Obelix-05\\Obelix\\Obelix-249999.nn",
+                "reward": 5.998750048020156,
+                "creation_time": 1602841597.2956107
+            },
+            {
+                "steps": 299942,
+                "file_path": "results\\Obelix-05\\Obelix\\Obelix-299942.nn",
+                "reward": 3.113400040194392,
+                "creation_time": 1602842169.947177
+            },
+            {
+                "steps": 349939,
+                "file_path": "results\\Obelix-05\\Obelix\\Obelix-349939.nn",
+                "reward": 4.603444516102576,
+                "creation_time": 1602842725.950177
+            },
+            {
+                "steps": 399942,
+                "file_path": "results\\Obelix-05\\Obelix\\Obelix-399942.nn",
+                "reward": 4.51733322107854,
+                "creation_time": 1602843368.08573
+            },
+            {
+                "steps": 438755,
+                "file_path": "results\\Obelix-05\\Obelix\\Obelix-438755.nn",
+                "reward": 4.1169999887933955,
+                "creation_time": 1602843808.8871017
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 438755,
+            "file_path": "results\\Obelix-05\\Obelix.nn",
+            "reward": 4.1169999887933955,
+            "creation_time": 1602843808.8871017
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.20.0",
+        "tensorflow_version": "2.3.0"
+    }
+}
