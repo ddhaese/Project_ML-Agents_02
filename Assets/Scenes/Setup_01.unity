@@ -6618,7 +6618,7 @@ MonoBehaviour:
     VectorActionSize: 0300000003000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
-  m_Model: {fileID: 5022602860645237092, guid: d6ee8b60259bfb942875545423dda037, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Obelix
@@ -7296,9 +7296,9 @@ GameObject:
   - component: {fileID: 1500964951}
   - component: {fileID: 1500964950}
   - component: {fileID: 1500964949}
-  - component: {fileID: 1500964948}
   - component: {fileID: 1500964947}
   - component: {fileID: 1500964946}
+  - component: {fileID: 1500964948}
   - component: {fileID: 1500964945}
   - component: {fileID: 1500964944}
   m_Layer: 0
@@ -8877,7 +8877,7 @@ MonoBehaviour:
     VectorActionSize: 0300000003000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
-  m_Model: {fileID: 5022602860645237092, guid: d6ee8b60259bfb942875545423dda037, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: Obelix
