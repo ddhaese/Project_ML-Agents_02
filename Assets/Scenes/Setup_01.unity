@@ -325,6 +325,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -571,6 +572,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -1548,6 +1550,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -1670,6 +1673,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -1946,6 +1950,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -2853,6 +2858,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -4311,6 +4317,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -4608,6 +4615,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -5095,6 +5103,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -5272,6 +5281,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -5394,6 +5404,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -5774,6 +5785,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -6071,6 +6083,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -6905,6 +6918,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -7605,6 +7619,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -8421,6 +8436,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -8637,6 +8653,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -9389,6 +9406,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -9823,6 +9841,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
@@ -10154,6 +10173,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Menhir
   - Destination
+  - MenhirInPlace
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 3.5
