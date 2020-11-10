@@ -29,12 +29,23 @@ public class Obelix : Agent
         body.angularVelocity = Vector3.zero;
         body.velocity = Vector3.zero;
         
-        environment.clearEnvironment();
-        environment.spawnMenhirs();
-        environment.spawnStoneHenge();
+        environment.ClearEnvironment();
+        environment.SpawnMenhirs();
+        environment.SpawnStoneHenge();
 
         menhirsDone = 0;
         menhirCount = environment.menhirCount;
+    }
+
+    public override void CollectObservations(VectorSensor sensor)
+    {
+        sensor.AddObservation(carriesMenhir);
+
+        if (transform.localPosition.y < 0)
+        {
+            AddReward(-1f);
+            EndEpisode();
+        }
     }
 
     public override void Heuristic(float[] actionsOut)
@@ -46,7 +57,7 @@ public class Obelix : Agent
         {
             actionsOut[0] = 2f;
         }
-        else if (Input.GetKey(KeyCode.DownArrow)) // Turning left
+        else if (Input.GetKey(KeyCode.DownArrow)) // Moving Bckwd
         {
             actionsOut[0] = 1f;
         }
@@ -57,17 +68,6 @@ public class Obelix : Agent
         else if (Input.GetKey(KeyCode.RightArrow)) // Turning right
         {
             actionsOut[1] = 2f;
-        }
-    }
-
-    public override void CollectObservations(VectorSensor sensor)
-    {
-        sensor.AddObservation(carriesMenhir);
-
-        if (transform.localPosition.y < 0)
-        {
-            AddReward(-1f);
-            EndEpisode();
         }
     }
 

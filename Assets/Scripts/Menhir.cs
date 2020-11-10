@@ -13,11 +13,11 @@ public class Menhir : MonoBehaviour
     {
         if (speed > 0f)
         {
-            move();
+            Move();
         }
     }
 
-    private void move()
+    private void Move()
     {
         if (environment == null)
         {
@@ -27,7 +27,7 @@ public class Menhir : MonoBehaviour
         if (Time.fixedTime >= nextActionTime)
         {
             randomizedSpeed = speed * Random.Range(.5f, 1.5f);
-            targetPosition = environment.randomPosition(1f);
+            targetPosition = environment.RandomPosition(1f);
             transform.rotation = Quaternion.LookRotation(targetPosition - transform.localPosition, Vector3.up);
             float timeToGetThere = Vector3.Distance(transform.localPosition, targetPosition) / randomizedSpeed;
             nextActionTime = Time.fixedTime + timeToGetThere;

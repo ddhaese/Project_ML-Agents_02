@@ -28,7 +28,7 @@ public class Environment : MonoBehaviour
         scoreBoard.text = obelix.GetCumulativeReward().ToString("f2");
     }
 
-    public Vector3 randomPosition(float up)
+    public Vector3 RandomPosition(float up)
     {
         float x = Random.Range(-9.75f, 9.75f);
         float z = Random.Range(-9.75f, 9.75f);
@@ -36,7 +36,7 @@ public class Environment : MonoBehaviour
         return new Vector3(x, up, z);
     }
 
-    public void clearEnvironment()
+    public void ClearEnvironment()
     {
         foreach (Transform menhir in menhirs.transform)
         {
@@ -49,7 +49,7 @@ public class Environment : MonoBehaviour
         }
     }
 
-    public void spawnStoneHenge()
+    public void SpawnStoneHenge()
     {
         for (int i = 0; i < menhirCount; i++)
         {
@@ -66,14 +66,14 @@ public class Environment : MonoBehaviour
         }
     }
 
-    public void spawnMenhirs()
+    public void SpawnMenhirs()
     {
         for (int i = 0; i < menhirCount; i++)
         {
             GameObject newMenhir = Instantiate(menhirPrefab.gameObject);
 
             newMenhir.transform.SetParent(menhirs.transform);
-            newMenhir.transform.localPosition = randomPosition(1f);
+            newMenhir.transform.localPosition = RandomPosition(1f);
             newMenhir.transform.localRotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
         }
     }
